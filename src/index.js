@@ -3,8 +3,8 @@ import './css/styles.css';
 import Notiflix from 'notiflix';
 import API from './fetchCountries';
 import debounce from 'lodash.debounce';
-debounce = require('lodash.debounce');
-const DEBOUNCE_DELAY = 300;
+// debounce = require('lodash.debounce');
+const DEBOUNCE_DELAY = 3000;
 
 const refs = {
     inputEl: document.querySelector('#search-box'),
@@ -35,6 +35,7 @@ function onSearch(e){
            return;
         }
         else if (resolve.length > 10) {
+            clearCountryInfoContainers();
             Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
             return;
           }
