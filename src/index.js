@@ -3,7 +3,7 @@ import './css/styles.css';
 import Notiflix from 'notiflix';
 import API from './fetchCountries';
 import debounce from 'lodash.debounce';
-debounce = require('lodash.debounce');
+// debounce = require('lodash.debounce');
 const DEBOUNCE_DELAY = 3000;
 
 const refs = {
