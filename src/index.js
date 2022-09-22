@@ -4,7 +4,7 @@ import Notiflix from 'notiflix';
 import API from './fetchCountries';
 import debounce from 'lodash.debounce';
 // debounce = require('lodash.debounce');
-const DEBOUNCE_DELAY = 3000;
+const DEBOUNCE_DELAY = 300;
 
 const refs = {
     inputEl: document.querySelector('#search-box'),
